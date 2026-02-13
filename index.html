@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="musicPlayer" loop>
+        <source src="soft.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <div id="envelope" class="envelope">
+            <div class="heart-seal">To my Hanie! 💌</div>
+            <p>Click to open...</p>
+        </div>
+
+        <div id="content" class="hidden">
+            
+            <div class="step active" id="step1">
+                <h1>Hey Hanie!</h1>
+                <p class="message">
+                    You know, I still think about the time you handled me when I was at my worst. 
+                    You were there the whole time talking to me, being patient with me, and just being there for me. 
+                    You even asked me to join Discord so we could listen to music together.
+                </p>
+                <button class="arrow-btn" onclick="nextStep(2)">Next ➔</button>
+            </div>
+
+            <div class="step" id="step2">
+                <h1>That Moment...</h1>
+                <p class="message">
+                    You even played some of my favorite songs, which I thought was really thoughtful and sweet at the time. 
+                    I thought you were just being nice to me back then, but I felt so happy when you told me you did it simply because you wanted me to be happy. 
+                    I consider it one of the sweetest things anyone has ever done for me; that was definitely the first time I started falling in love.
+                </p>
+                <button class="arrow-btn" onclick="nextStep(3)">Next ➔</button>
+            </div>
+
+            <div class="step" id="step3">
+                <h1>About this...</h1>
+                <p class="message">
+                    Remember when I said I wanted to surprise you? This is actually part of the surprise. Yes! "part" of it. 
+                    I've been meaning to try making one of these websites ever since! I wanted to dedicate this to allow me to express how much I appreciate and love you in a much more quirky and fun way hehehe...
+                </p>
+                <button class="arrow-btn" onclick="nextStep(4)">Next ➔</button>
+            </div>
+
+            <div class="step" id="step4">
+                <h1>The Other Surprise...</h1>
+                <p class="message">
+                    I really hope you like it, Hanie. I know it's not much, but I wanted to make something memorable and special just for you. 
+                    The other surprise I have in mind is something we both can slowly build upon, a scrapbook of some sort! 
+                    You already guessed what it was actually, that's why I had to change our topic LOL. But hey, as long as you love it, and I have fun doing something just for you. That's what's important, right?
+                </p>
+                <button class="arrow-btn" onclick="nextStep(5)">Next ➔</button>
+            </div>
+
+            <div class="step" id="step5">
+                <h1>My Promises...</h1>
+                <p class="message">
+                    Arhnie, I just want to say that I love you so much. I know we haven't been together for a long time, but I feel really happy already whenever I'm with you. Both physically and virtually. 
+                    I know we have a lot of things to work on, but I just want you to know that I'm willing to work on those things with you. I want to be there for you, and I want to make you happy.
+                </p>
+                <button class="arrow-btn" onclick="nextStep(6)">Next ➔</button>
+            </div>
+
+            <div class="step" id="step6">
+                <h1>Just You...</h1>
+                <p class="message">
+                    I also want you to rely on me as well. I wanna pamper you. I wanna kiss you. I wanna hug you. I wanna do a lot of sweet things with you. 
+                    I want you to know that my intentions with you will be concrete, I have no plans on leaving you for anyone else. You are the only girl that I will love exclusively...
+                </p>
+                <button class="arrow-btn" onclick="nextStep(7)">Next ➔</button>
+            </div>
+
+             <div class="step" id="step7">
+                <h1>Happy Valentine's!</h1>
+                <p class="message">
+                    To finally conclude this message, I will repeat it again. I love you lots, my beautiful, smartest, kindest, sweetest, and most amazing girlfriend in the world! My Arhnie Dela Cruz!! 
+                    <br><br>
+                    Happy Valentine's Day, my love! <br> 
+                    - Your Motchi <3
+                </p>
+                <button class="arrow-btn" onclick="nextStep('Ask')">Next ➔</button>
+            </div>
+
+            <div class="step" id="stepAsk">
+                <h2>Did you love my surprise?</h2>
+                <div class="buttons">
+                    <button id="yesBtn">Yes!</button>
+                    <button id="noBtn">No</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
